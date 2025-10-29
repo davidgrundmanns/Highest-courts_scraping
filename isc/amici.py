@@ -36,8 +36,8 @@ for i in range(480, len(links)):
     web.get(links[i]) # open browser
     time.sleep(1)
     # find amici by keyword "friend" (hebrew: ידידי)
-    if len(web.find_elements(By.XPATH, '//tbody[.//tr/td/p/span[contains(text(),"ידידי")]]')) == 1:
-        entry = web.find_elements(By.XPATH, '//tbody[.//tr/td/p/span[contains(text(),"ידידי")]]')
+    if len(web.find_elements(By.XPATH, '//tbody[.//tr/td/p/span[contains(text(),"ידיד")]]')) == 1:
+        entry = web.find_elements(By.XPATH, '//tbody[.//tr/td/p/span[contains(text(),"ידיד")]]')
         # the first entry is where we need to look
         for j in range(0, len(entry)):
             decision_links.append(links[i])
