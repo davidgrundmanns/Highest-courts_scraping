@@ -31,7 +31,7 @@ briefs_filer = list()
 decision_links = list()
 
 # start loop over links
-for i in range(480, len(links)):
+for i in range(0, len(links)):
     # Access webdriver and open page
     web.get(links[i]) # open browser
     time.sleep(1)
